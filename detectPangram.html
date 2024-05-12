@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hello coursera</title>
+</head>
+<body>
+<script>
+let string = "The quick brown fox jumps over the lazy dog.";
+let arrayFromString;
+let count = 0;
+	arrayFromString = Array.from(string);
+let alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+	for (var i = 0; i < arrayFromString.length; i++){
+		for ( var j = 0; j < alphabet.length; j++) {
+			let symbol = alphabet[j];
+			let symbylToUpper = symbol.toUpperCase();
+			if (arrayFromString[i] === alphabet[j] || arrayFromString[i] === symbylToUpper) {
+				alphabet.splice(j,1);
+			}
+
+		}
+	}
+		if (count === alphabet.length) {
+			console.log("true");
+		}
+
+
+</script>
+</body>
+</html>
