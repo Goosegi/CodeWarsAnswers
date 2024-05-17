@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<script>
+    let str = "Across the rivers";
+    let name = "chris";
+ let arrayOfStr = Array.from(str);
+  let arrayOfName = Array.from(name);
+  let count = 0;
+    for (let i = 0; i < arrayOfName.length; i++) {
+        for (let j = 0; j < arrayOfStr.length; j++) {
+            if (arrayOfStr[j] === arrayOfName[i]){
+            arrayOfName.splice(1,1);
+            count++;
+             }
+        }
+    }
+    if (count === name.length) {
+        console.log("true");
+    } else {
+        console.log("false");
+    }
+  
+</script>
+
+</body>
+</html>

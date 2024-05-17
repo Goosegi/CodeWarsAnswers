@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hello coursera</title>
+</head>
+<body>
+<script>
+let numb = 456;
+ let strOfNumb = "";
+ strOfNumb = String(numb);
+ let result = 0;
+ let boof;
+ 	for (let i = 0; i <= strOfNumb.length; i++) {
+ 		boof = strOfNumb.substr(i,1);
+ 		result = result + Number(boof);
+
+ 		if (i === strOfNumb.length) {
+ 			strOfNumb = String(result);
+ 			if (strOfNumb.length === 1) {
+ 				break;
+ 			}
+ 			i = 0;
+ 			result = 0;
+ 			 	boof = strOfNumb.substr(i,1);
+ 				result = result + Number(boof);
+ 			
+ 		}
+ 	}
+ 	console.log(result)
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hello coursera</title>
+</head>
+<body>
+<script>
+let h = 3;
+let bounce = 0.66;
+let windows = 1.5;
+let glimpse = 0;
+	if (h > 0) {
+		if (h > windows) {
+			if (1.00 < bounce && bounce > 0) {
+		while (h > windows) {
+		glimpse++;
+		h = h * bounce;
+		if (h > windows) {
+			glimpse++;
+		}
+	}
+	console.log(glimpse);
+			}
+		}
+	}
+console.log(-1);
+</script>
+</body>
+</html>

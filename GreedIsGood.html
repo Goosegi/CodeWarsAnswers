@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hello coursera</title>
+</head>
+<body>
+<script>
+	let  dice = [4, 4, 4, 3, 3];
+	let numberOne = 0;
+	let numberTwo = 0;
+	let numberFree = 0;
+	let numberFour = 0;
+	let numberFive = 0;
+	let numberSix = 0;
+	let score = 0;
+	for (var i = 0; i < dice.length; i++) {
+		switch(dice[i]) {
+		case 1:
+			numberOne++;
+			break;
+		case 2:
+			numberTwo++;
+			break;
+		case 3:
+			numberFree++;
+			break;
+		case 4:
+			numberFour++;
+			break;
+		case 5:
+			numberFive++;
+			break;
+		case 6:
+			numberSix++;
+			break;			
+		}
+	}
+	if (numberOne >= 3) {
+		score = score + 10*100;
+		numberOne = numberOne - 3;
+	} else if (numberTwo >= 3) {
+		score = score + 2*100;
+			} else if (numberFree >= 3) {
+		score = score + 3*100;
+			} else if (numberFour >= 3) {
+		score = score + 4*100;
+			} else if (numberFive >= 3) {
+		score = score + 5*100;
+		numberFive = numberFive - 3;
+			} else if (numberSix >= 3) {
+		score = score + 6*100;
+			}
+	score = score + (numberOne * 100) + (numberFive * 50); 	
+	console.log(score)
+</script>
+</body>
+</html>

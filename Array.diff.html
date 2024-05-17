@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<script>
+function arrayDiff(a, b) {
+  for (var i = 0; i < b.length; i++) {
+    a = a.filter(function(item) {
+      return item !== b[i];
+    });
+  }
+  return a;
+}
+
+</script>
+
+</body>
+</html>
